@@ -1,82 +1,29 @@
 <!DOCTYPE html>
 <html>
 
+<template id="my-search-bar">
+	<form>
+		<input type="text" name="text" class="search" placeholder="Поиск">
+		<input type="submit" name="submit" class="submit" value="Найти">
+	</form>
+</template>
+
 <head>
 	<link rel="stylesheet" type="text/css" href="./styles.css" />
+	<script src="./components/searchBar.js"></script>
+	<script src="./components/topMenu.js"></script>
 	<title>ГБОУ СОШ №529</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
 <body>
-	<form>
-		<input type="tex" name="text" class="search" placeholder="Поиск">
-		<input type="submit" name="submit" class="submit" value="Найти">
-	</form>
-	<nav>
-		<div class="dropdown">
-			<button class="dropbtn">Сведения об образовательной организации</button>
-			<div class="dropdown-content">
-				<!-- данные ссыдки не будут работать так как они абсолютные на твоей системе -->
-				<!-- тебе надо использовать релвтивные например - href="/main_info.hmtl" -->
-				<a href="/Users/a1234/Desktop/school 529/osnsvedeniya.html">Основные сведения</a>
-				<a href="/Users/a1234/Desktop/school 529/obrazovaniye.html">Образование</a>
-				<a href="#">Образовательные стандарты</a>
-				<a href="#">Наши педагоги и руководство</a>
-				<a href="#">Платные образовательные услуги</a>
-				<a href="#">Международное сотрудничество</a>
-			</div>
-		</div>
-		<div class="dropdown">
-			<button class="dropbtn">Обучение</button>
-			<div class="dropdown-content">
-				<a href="#">Библиотека</a>
-				<a href="#">Смешанный формат обучения</a>
-				<a href="#">Олимпиады, конкурсы</a>
-				<a href="#">Рабочие программы</a>
-				<a href="#">Внеурочная деятельность</a>
-				<a href="#">Прием в 1-й класс</a>
-				<a href="#">Поступление в другие классы</a>
-				<a href="#">ГИА, ЕГЭ, ОГЭ, итоговое сочинение</a>
-				<a href="#">Профориентация</a>
-			</div>
-		</div>
-		<div class="dropdown">
-			<button class="dropbtn">Воспитание</button>
-			<div class="dropdown-content">
-				<a href="#">Большая Перемена</a>
-				<a href="#">Музей боевой славы 1-ой ГИАВД</a>
-				<a href="#">Мероприятия</a>
-			</div>
-		</div>
-		<div class="dropdown">
-			<button class="dropbtn">Здоровье</button>
-			<div class="dropdown-content">
-				<a href="#">Информация</a>
-			</div>
-		</div>
-		<div class="dropdown">
-			<button class="dropbtn">Электронный дневник</button>
-			<div class="dropdown-content">
-				<a href="https://petersburgedu.ru" target="_blank">Портал петербургского образования (электронный
-					дневник)</a>
-			</div>
-		</div>
-		<div class="dropdown">
-			<button class="dropbtn">Разное</button>
-			<div class="dropdown-content">
-				<a href="/Users/a1234/Desktop/school 529/newsh.html">Главная</a>
-				<a href="#">Фотогалерея</a>
-				<!-- тут надо поставить target="_blank" чтобы новая таба открылась при клике -->
-				<a href="https://vk.com/school529spb">Группа VK</a>
-				<a href="#">Контактная информация</a>
-			</div>
-		</div>
-	</nav>
+	<my-search-bar></my-search-bar>
+	
+	<my-top-menu></my-top-menu>
 
 	<div class="nazvanie">
 		<h1>Школа №529 имени героя России Д. А. Опарина</h1>
 	</div>
-
 	<nav>
 		<ul>
 			<li><a href="#ВАЖНАЯ ИНФОРМАЦИЯ">Важная информация</a></li>
